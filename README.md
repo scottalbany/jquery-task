@@ -1,2 +1,5 @@
 # jquery-task
-Simple TODO List exercise using jQuery to pull data from JSON-P | Validation | No web server required
+Simple TODO List using jQuery to pull data from JSON-P and prepend new tasks (no storage)
+Bootstrapped
+Validation
+Web Server Not Required
