@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abercrombie &amp; Fitch &raquo; Front End Code Exercise &raquo; jQuery</title>
+    <!-- Bootstrap CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Page Style CSS -->
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="background"></div>
+    <div class="container">
+        <div class="row header">
+            <div class="col-md-12">
+                <h1>Task Tracker</h1>
+                <p>v.2.0</p>
+            </div>
+        </div>
+        <div class="row content">
+            <div class="col-md-6">
+                <h2>Create a Task</h2>
+                <form id="taskForm">
+                    <fieldset class="form-group">
+                        <label>Task Name</label>
+                        <input type="text" class="form-control" name="name" id="taskName">
+                        <label>Date</label>
+                        <input type="text" class="form-control" name="date" id="taskDate" placeholder="MM/DD/YYYY">
+                        <label>Assigned To</label>
+                        <input type="text" class="form-control" name="assigned" id="taskAssigned">
+                        <button id="addTask" type="submit" class="btn btn-secondary">Submit</button>
+                    </fieldset>
+		       </form>
+            </div>
+            <div class="col-md-6">
+                <h2>Existing Tasks</h2>
+                <div class="appData results"></div>
+                <ul></ul>
+            </div>
+        </div>
+
+    </div>
+    <!-- jQuery -->
+    <script src="assets/lib/jquery-1.12.4.min.js"></script>
+    <!-- App -->
+    <script src="assets/js/app.js"></script>
+    <!-- Data -->
+    <script src="assets/js/data.jsonp"></script>
+    <!-- Bootstrap -->
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
