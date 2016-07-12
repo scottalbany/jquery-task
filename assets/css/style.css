@@ -1,0 +1,87 @@
+/* Customize Bootsrap for Desktop */
+@media (min-width: 1200px) {
+  .container {
+    width: 970px;
+  }
+}
+/* App Style */
+body {
+    height: 100%;
+    background: #F0F0F0;
+    
+}
+.background {
+    z-index: -999;
+    height: 95px;
+    width: 100%;
+    position: fixed;
+    background: #E2E2E2;
+}
+h1 {
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+h2 {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.header {
+    background: #F0F0F0;
+    position: relative;
+    margin-top: 5px;
+}
+.header p {
+    font-size: 110%;
+    color: #666;
+    font-weight: bold;
+}
+.content {
+    background: #FFF;
+    min-height: 500px;
+}
+form input[type=text] {
+    background: #ECECEC;
+}
+.btn{
+    background: #434343;
+    font-family: Georgia, serif;
+    color: #FFF;
+    margin: 20px 0px;
+}
+@media (min-width: 960px) {
+    .results {
+        width: 98%;
+    }
+    .results .list span.assigned {
+        margin-right: 20px;
+    }
+}
+.results {
+    border: 4px solid #DEDEDE;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.list {
+    padding: 10px;
+}
+.results .list span.name {
+    font-family: Georgia, serif;
+    font-weight: bold;
+    display:inline-block;
+    width: 40%
+}
+.results .list span.date {
+    color: #666;
+    display:inline-block;
+    text-align: right;
+}
+.results .list span.assigned {
+    font-weight: bold;
+    display:inline-block;
+    float: right;
+}
+.results .list:nth-child(even) {
+    background: #DCDCDC
+}
