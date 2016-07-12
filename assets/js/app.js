@@ -19,11 +19,29 @@ $('#addTask').click(function(event) {
     var taskName = $('#taskName').val(),
         taskDate = $('#taskDate').val(),
         taskAssigned = $('#taskAssigned').val();
-    $(".appData").prepend(
-        "<div class='list'><span class='name'>" + taskName +
-        "</span> <span class='date'>" + taskDate +
-        "</span> <span class='assigned'>" + taskAssigned +
-        "</span> </div>"
-    );
-
+    var isValid = true;
+    $('input[type="text"]').each(function() {
+        if ($.trim($(this).val()) === '') {
+            isValid = false;
+            $(this).css({
+                "border": "1px solid red",
+                "background": "#FFCECE"
+            });
+        } else {
+            $(this).css({
+                "border": "",
+                "background": ""
+            });
+        }
+    });
+    if (isValid === true) {
+        $(".appData").prepend(
+            "<div class='list'><span class='name'>" + taskName +
+            "</span> <span class='date'>" + taskDate +
+            "</span> <span class='assigned'>" + taskAssigned +
+            "</span> </div>"
+        );
+    }
 });
+
+

@@ -50,6 +50,9 @@ form input[type=text] {
     color: #FFF;
     margin: 20px 0px;
 }
+.btn:hover {
+    color: #EFEFEF;
+}
 @media (min-width: 960px) {
     .results {
         width: 98%;
