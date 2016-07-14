@@ -12,14 +12,17 @@ function loadTasks(tasks) {
     });
 }
 
-// Append Tasks to List
+// Add Tasks to List
 $('#addTask').click(function(event) {
     'use strict';
     event.preventDefault();
+    // Check for Validity
     var taskName = $('#taskName').val(),
         taskDate = $('#taskDate').val(),
-        taskAssigned = $('#taskAssigned').val();
-    var isValid = true;
+        taskAssigned = $('#taskAssigned').val(),
+        isValid = true;
+    
+    // Error if Not Valid
     $('input[type="text"]').each(function() {
         if ($.trim($(this).val()) === '') {
             isValid = false;
@@ -34,6 +37,8 @@ $('#addTask').click(function(event) {
             });
         }
     });
+    
+    // Prepend Values
     if (isValid === true) {
         $(".appData").prepend(
             "<div class='list'><span class='name'>" + taskName +
