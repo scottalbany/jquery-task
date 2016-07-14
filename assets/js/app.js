@@ -46,6 +46,8 @@ $('#addTask').click(function(event) {
             "</span> <span class='assigned'>" + taskAssigned +
             "</span> </div>"
         );
+        // Reset Form After Append
+        $("#taskForm")[0].reset();
     }
 });
 
